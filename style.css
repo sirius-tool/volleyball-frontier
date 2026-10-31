@@ -1,0 +1,18 @@
+*{box-sizing:border-box;margin:0}
+body{min-height:100vh;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at 50% 30%,#1b2a4a,#080c18);font-family:'Segoe UI','Hiragino Sans','Meiryo',sans-serif;color:#fff}
+#wrap{position:relative;width:min(96vw,calc(96vh*960/660));aspect-ratio:960/660;border-radius:18px;overflow:hidden;box-shadow:0 20px 60px #000a}
+canvas{width:100%;height:100%;display:block}
+.ov{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;background:rgba(6,10,22,.82);backdrop-filter:blur(4px);text-align:center}
+.hide{display:none}
+h1{font-size:clamp(34px,7vw,74px);line-height:.95;font-weight:900;letter-spacing:.06em}
+h1 span{display:block;background:linear-gradient(90deg,#2f7bff,#ff4d5e);-webkit-background-clip:text;background-clip:text;color:transparent}
+h2{font-size:clamp(28px,5vw,52px);letter-spacing:.1em}
+.teams{display:flex;gap:14px;align-items:center;font-size:clamp(11px,1.8vw,16px)}
+.teams b{padding:6px 14px;border-radius:99px;border:2px solid var(--c);background:color-mix(in srgb,var(--c) 25%,transparent)}
+.teams i{opacity:.6;font-style:normal}
+button{font:inherit;font-weight:700;font-size:clamp(14px,2.2vw,20px);padding:10px 36px;border:0;border-radius:99px;color:#fff;background:linear-gradient(90deg,#2f7bff,#6a5cff);cursor:pointer;box-shadow:0 6px 18px #2f7bff55;transition:transform .12s}
+button:hover{transform:translateY(-2px) scale(1.03)}
+.keys{border-collapse:collapse;font-size:clamp(11px,1.6vw,15px);background:#ffffff0d;border-radius:12px}
+.keys td{padding:5px 14px;text-align:left}
+.keys td:first-child{font-weight:700;color:#ffd23f;white-space:nowrap}
+.note{opacity:.7;font-size:clamp(10px,1.5vw,14px)}

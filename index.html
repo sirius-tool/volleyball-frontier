@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>VOLLEY FRONTIER</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="960" height="660"></canvas>
+
+  <section id="title" class="ov">
+    <h1>VOLLEY<span>FRONTIER</span></h1>
+    <div class="teams">
+      <b style="--c:#2f7bff">BLUE FALCONS（あなた）</b><i>VS</i><b style="--c:#ff4d5e">RED TIGERS（CPU）</b>
+    </div>
+    <button id="start">試合開始</button>
+    <table class="keys">
+      <tr><td>W A S D / 矢印キー</td><td>移動（押しながら打つと狙う方向を調整）</td></tr>
+      <tr><td>Q</td><td>操作選手の切り替え</td></tr>
+      <tr><td>Space</td><td>サーブ（トス→もう一度）／レシーブ</td></tr>
+      <tr><td>E</td><td>トス／ネット際でスパイク</td></tr>
+      <tr><td>Esc</td><td>ポーズ</td></tr>
+    </table>
+    <p class="note">15点先取・2点差で勝利 ／ 1チーム最大3タッチ</p>
+  </section>
+
+  <section id="pause" class="ov hide">
+    <h2>PAUSE</h2>
+    <button id="resume">再開</button>
+    <button id="toTitle">タイトルへ</button>
+  </section>
+
+  <section id="over" class="ov hide">
+    <h2 id="overTitle"></h2>
+    <p id="overScore"></p>
+    <button id="again">もう一度</button>
+    <button id="toTitle2">タイトルへ</button>
+  </section>
+</div>
+<audio id="crowdAudio" src="スタジアムの歓声2.mp3" preload="auto"></audio>
+<script src="game.js"></script>
+</body>
+</html>
